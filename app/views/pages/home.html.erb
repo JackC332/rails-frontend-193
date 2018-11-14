@@ -1,0 +1,132 @@
+<%= render 'pages/banner' %>
+
+<div class="container">
+  <div class="row">
+    <h4>Select breed:</h4>
+    <%= select_tag "breed", options_for_select(
+      @breeds),
+      class: 'js-select' %>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-4">
+      <div class="card">
+        <div class="card-image" style="background: linear-gradient(to bottom,rgba(20,20,20, 0.8),rgba(76,76,76,0.2) 30%), url(<%= image_path('kogi-1.jpg') %>) center / cover no-repeat;"></div>
+        <div class="card-content">
+          <div class="card-name">
+            Kogi
+          </div>
+          <div class="card-info">
+            German Shorthaired Pointer
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <div class="card">
+        <div class="card-image" style="background: linear-gradient(to bottom,rgba(20,20,20, 0.8),rgba(76,76,76,0.2) 30%), url(<%= image_path('kogi-2.jpg') %>) center / cover no-repeat;"></div>
+        <div class="card-content">
+          <div class="card-name">
+            Kogi
+          </div>
+          <div class="card-info">
+            German Shorthaired Pointer
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <div class="card">
+        <div class="card-image" style="background: linear-gradient(to bottom,rgba(20,20,20, 0.8),rgba(76,76,76,0.2) 30%), url(<%= image_path('kogi-3.jpg') %>) center / cover no-repeat;"></div>
+        <div class="card-content">
+          <div class="card-name">
+            Kogi
+          </div>
+          <div class="card-info">
+            German Shorthaired Pointer
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 col-md-4">
+      <div class="card">
+        <div class="card-image" style="background: linear-gradient(to bottom,rgba(20,20,20, 0.8),rgba(76,76,76,0.2) 30%), url(<%= image_path('kogi-1.jpg') %>) center / cover no-repeat;"></div>
+        <div class="card-content">
+          <div class="card-name">
+            Kogi
+          </div>
+          <div class="card-info">
+            German Shorthaired Pointer
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <div class="card">
+        <div class="card-image" style="background: linear-gradient(to bottom,rgba(20,20,20, 0.8),rgba(76,76,76,0.2) 30%), url(<%= image_path('kogi-2.jpg') %>) center / cover no-repeat;"></div>
+        <div class="card-content">
+          <div class="card-name">
+            Kogi
+          </div>
+          <div class="card-info">
+            German Shorthaired Pointer
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-4">
+      <div class="card">
+        <div class="card-image" style="background: linear-gradient(to bottom,rgba(20,20,20, 0.8),rgba(76,76,76,0.2) 30%), url(<%= image_path('kogi-3.jpg') %>) center / cover no-repeat;"></div>
+        <div class="card-content">
+          <div class="card-name">
+            Kogi
+          </div>
+          <div class="card-info">
+            German Shorthaired Pointer
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <%= image_tag "logo.png", alt: "Le Wagon", width: 200 %>
+  </div>
+
+  <div class="container">
+    <button id="sweet-alert-demo" class="btn btn-primary">Click me!</button>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+  </div>
+</div>
+
+!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
